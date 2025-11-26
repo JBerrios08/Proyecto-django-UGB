@@ -1,0 +1,100 @@
+:root {
+    --gold-dark: #be6a0f;
+    --gold-light: #bf9803;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.navbar-brand span {
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.loader-overlay {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.loader-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: fade 1.2s ease-in-out infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.35;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.35;
+    }
+}
+
+/* Tarjetas del catálogo */
+.card.catalog-card {
+    border: 2px solid var(--gold-dark);
+    border-radius: 12px;
+    background: #ffffff;
+    transition: 0.25s;
+}
+
+.card.catalog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(190, 106, 15, 0.35);
+    border-color: var(--gold-light);
+}
+
+.badge-categoria {
+    background-color: var(--gold-dark) !important;
+    color: #fff !important;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.badge-oferta {
+    background-color: var(--gold-light) !important;
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.price-tag {
+    font-weight: bold;
+    color: #198754;
+}
+
+.square-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.btn-card {
+    background-color: var(--gold-dark);
+    border-color: var(--gold-dark);
+    color: #fff;
+}
+
+.btn-card:hover {
+    background-color: var(--gold-light);
+    border-color: var(--gold-light);
+    color: #000;
+}
+
+.table thead th {
+    background-color: #212529;
+    color: #fff;
+}

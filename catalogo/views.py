@@ -413,6 +413,7 @@ def landing_catalogo(request):
         "productos": productos_mostrar,
         "tipos": tipos,
         "filtro_actual": filtro_tipo,
+        "title": "Sportline - Ropa Deportiva",
         "titulo": "Sportline - Ropa Deportiva",
         "slogan": "Activa tu mejor versión.",
         "cantidad_items": obtener_total_items(request),
@@ -490,6 +491,7 @@ def carrito(request):
         "cantidad_items": obtener_total_items(request),
         "whatsapp_compra": whatsapp_compra,
         "descuento_total_porcentaje": descuento_total_porcentaje,
+        "title": "Carrito de Compras",
     })
 
 
